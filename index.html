@@ -1,37 +1,45 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tickly Tac</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="app.js"></script>
 </head>
 <body>
    <header>
-      <h1 class="font-roboto text-sky-600 text-4xl m-6">
-         | TIC-TAC-TOE |
+      <h1>
+         TIC-TAC-TOE
       </h1>
-      <!-- <h3>
-         <span id="p1"></span>— <span id="p2"></span>
-      </h3> -->
+      <h3>
+         <span id="p1"></span>
+      </h3>
    </header>
    <section>
-      <div class="board w-54 h-screen m-2">
-         <div class="row-1 w-1/5 h-1/1 m-2 flex bg-sky-500 rounded-lg">
-            <span class="box text-5xl m-8 " id="a1">X</span>
-            <span class="box text-5xl m-8" id="a2">X</span>
-            <span class="box text-5xl m-8" id="a3">X</span>
+      <div class="board">
+         <div class="row-1">
+            <span class="box" id="a1"></span>
+            <span class="box" id="a2"></span>
+            <span class="box" id="a3"></span>
          </div>
-         <div class="row-2  w-1/5 h-1/1 m-2 flex bg-pink-500 rounded-lg">
-            <span class="box text-5xl m-8" id="b1">O</span>
-            <span class="box text-5xl m-8" id="b2">X</span>
-            <span class="box text-5xl m-8" id="b3">O</span>
+         <div class="row-2">
+            <span class="box" id="b1"></span>
+            <span class="box" id="b2"></span>
+            <span class="box" id="b3"></span>
          </div>
-         <div class="row-3 w-1/5 h-1/1 m-2 flex bg-blue-300 rounded-lg">
-            <span class="box text-5xl m-8" id="c1">X</span>
-            <span class="box text-5xl m-8" id="c2">O</span>
-            <span class="box text-5xl m-8" id="c3">X</span>
+         <div class="row-3">
+            <span class="box" id="c1"></span>
+            <span class="box" id="c2"></span>
+            <span class="box" id="c3"></span>
          </div>
       </div>
    </section>
+   <footer>
+      <button type="button" onclick="window.location.reload()">
+         Restart game
+      </button>
+   </footer>
 </body>
 </html>
